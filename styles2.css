@@ -1,0 +1,266 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 5%;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        /*HEADER CAMBIADO*/
+header{
+	position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 80px; 
+    background: rgba(209, 209, 209, 0.7); 
+    backdrop-filter: blur(5px); 
+    z-index: 1000; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+	display:flex; 
+	width:20%;
+	height:80%;
+	align-items:start;	
+	margin-bottom: 2%;
+}
+
+nav{
+	display: flex;
+	height: 5;
+	width: 80%;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+nav a:link{
+	display: flex; 
+	text-decoration: none; 
+	text-align: center;
+	color: black;
+	font-family: "arial", serif;
+	transition:0.3s;
+}
+
+nav a:hover{
+	color:white;
+}
+
+nav a:visited{
+	color:none;
+}
+/* TERMINA HEADER CAMBIADO*/
+        #todo{
+			position:relative;
+			min-height:100vh;
+            padding: 20px;
+        }
+		
+		.entrada{
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			height:auto;
+			width:100%;
+			font-family: 'Georgia', serif;
+			min-height:100vh;
+			position:relative;
+			z-index: 4; 
+			margin:auto;
+			margin-bottom:10%;
+		}
+	
+		.tit{
+			display:flex;
+			height:auto;
+			width:50%;
+			z-index: 4; 
+			font-family: 'Georgia', serif;
+			font-size: 18px;
+			margin:auto;
+		}
+		
+			h1{
+			text-align: center;
+			font-family: "georgia", sans-serif; 
+			position: relative; 
+			display: inline-block;
+			color:white;
+		}
+			h1::after {
+			content: "Descubre lo que nuestros clientes opinan sobre su experiencia. Honestidad, calidad y confianza en cada testimonio."; 
+			display: block; 
+			width: 100%; 
+			height: 4px; 
+			background-color: #3498db; 
+			margin: 0 auto; 
+			margin-top: 3px; 
+			border-radius: 4px;
+			font-family: 'Georgia', serif;			
+			font-size:15px;
+			text-align:left;
+			line-height:30px;
+			
+		}
+		
+		
+	
+		
+		video{
+			position:absolute;
+			left:0;
+			top:0;
+			width:100%;
+			height:40%;
+			object-fit:cover;
+		}
+/*
+		font-family: 'Georgia', serif;
+		font-size: 18px;
+		color: #333;
+		background: linear-gradient(to right, #f0f0f0, #e0e0e0);
+		padding: 15px 20px;
+		border-left: 5px solid #007BFF;
+		border-radius: 8px;
+		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+		line-height: 1.6;
+		text-align: justify;
+*/
+		.capa{
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:40%;
+			background-color:black;
+			opacity:0.5;
+			z-index:3;
+			
+		}
+		
+        .review-form h2 {
+            margin-top: 0;
+			text-align:center;
+			color:black;
+        }
+        .reviews-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .review {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .review:last-child {
+            border-bottom: none;
+        }
+        .review strong {
+			font-family: 'Georgia', serif;
+			font-size: 18px;
+			color: #333;
+        }
+		.review-form{
+			height:50%;
+			width:100%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+			margin:0;
+            border-radius: 8px;
+			border-color:black;
+			border-style:solid;
+            margin-bottom: 20px;
+		}
+		
+		form{
+			display:flex;
+		}
+		
+		input[type="text"] {
+			border-style:solid;
+            width: 300px;
+            height: 40px;
+            padding: 10px;
+			border: 2px solid #000000;
+            font-size: 16px;
+			background-color:fff;
+        }
+		
+		#rating {
+            width: 250px;
+            height: 40px;
+            padding: 10px;
+            border: 2px solid #000000;
+            font-size: 16px;
+        }
+		
+		#comment{
+            width: 300px;
+            height: 40px;
+            padding: 10px;
+            border: 2px solid #000000;
+            font-size: 16px;
+			
+		}
+		
+		button{
+		background-color:transparent;
+		border-style:solid;
+		border:2px solid #000000;
+		}
+		
+		button:hover{
+			background-color:#26b0ff;
+			transition:0.3s;
+		}
+		
+		form{
+			display:flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #004aad;
+            color: white;
+        }
+		
+		@media screen and (max-width:800px){
+			
+			main2{
+				display:flex;
+				flex-direction:column;
+				
+				
+				
+			}
+			.logo{
+				width:120%;
+				height:80%;
+			}
+	
+			nav{
+				flex-direction:column;
+				width:auto;
+			}
+	
+			.logo img{
+				height:100%;
+				width:100%;
+			}
+			header{
+				height:auto;
+				width:auto;
+			}
+			
+		}
+		

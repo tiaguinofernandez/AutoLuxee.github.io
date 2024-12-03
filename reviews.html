@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles2.css" type="text/css">
+	<link rel="icon" href="imagenes/favicon.ico">
+    <title>Reseñas sobre AutoLuxe</title>
+
+</head>
+
+<body>
+   
+	
+<header>
+	
+		<div class="logo">
+			<a title="Menu" href="index.html"> 
+			<img src="imagenes/logo.png" alt="logo" /></a> 
+		</div>
+	 
+		<nav>
+			<a href="comprar.html" title="Comprar">COMPRA TU AUTO</a>
+			<a href="servicios.html" title="servicios">SERVICIOS</a>
+			<a href="contacto.html" title="contacto">CONTACTO</a>
+			<a href="nosotros.html" title="nosotros">NOSOTROS</a>
+			<a href="reviews.html" title="reviews">REVIEWS</a>
+		</nav>
+		
+	</header>
+   
+<main id="todo">
+
+<div class="entrada">
+	<div class="tit">
+		<h1>RESEÑAS DE CLIENTES</h1>
+	</div>
+</div>
+
+<video autoplay loop muted>
+	<source src="imagenes/opinion.mp4" type="video/mp4">
+		tu navegador no soporta el video.
+</video>
+
+<div class="capa"></div>
+	
+    <section class="review-form">
+        <h2>DEJA TU RESEÑA</h2>
+            <form action="#" method="post">
+                <label for="name">NOMBRE:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="rating">CALIFICACIÓN:</label><br>
+                <select id="rating" name="rating" required>
+                    <option value="5">5 - Excelente</option>
+                    <option value="4">4 - Muy Bueno</option>
+                    <option value="3">3 - Bueno</option>
+                    <option value="2">2 - Regular</option>
+                    <option value="1">1 - Malo</option>
+                </select><br><br>
+
+                <label for="comment">COMENTARIO:</label><br>
+                <textarea id="comment" name="comment" rows="4" required></textarea><br><br>
+
+                <button type="submit">ENVIAR RESEÑAS</button>
+            </form>
+    </section>
+
+        <section class="reviews-section">
+            <h2>RESEÑAS DE CLIENTES</h2>
+            <div class="review">
+                <strong>Juan Pérez</strong> - <em>Calificación: 5</em>
+                <p>¡Excelente servicio! Muy satisfecho con mi compra.</p>
+            </div>
+            <div class="review">
+                <strong>Ana Gómez</strong> - <em>Calificación: 4</em>
+                <p>Muy buena atención, aunque podría mejorar la variedad de modelos.</p>
+            </div>
+        </section>
+		
+		
+		
+		
+		
+<script>
+	document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita que la página se recargue
+    
+    const name = document.getElementById('name').value;
+    const rating = document.getElementById('rating').value;
+    const comment = document.getElementById('comment').value;
+
+    const reviewSection = document.querySelector('.reviews-section');
+
+    // Crear un nuevo bloque de reseña
+    const newReview = document.createElement('div');
+    newReview.classList.add('review');
+    newReview.innerHTML = `
+        <strong>${name}</strong> - <em>Calificación: ${rating}</em>
+        <p>${comment}</p>
+    `;
+
+    // Agregarlo al final de la sección de reseñas
+    reviewSection.appendChild(newReview);
+
+    // Limpiar el formulario
+   
+});
+</script>
+
+
+
+
+
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Concesionaria AutoPlus - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
